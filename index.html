@@ -1,133 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="App.css">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="App.css" />
     <title>Shopify</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <nav class="navigation">
-            <div>
-            <img src="" alt="">
-        </div>
-    <div class="searchContainer">
-        <input type="text" placeholder="search ">
-    </div>
-    <div class="right_section">
-        <div class="bell">
-            <img src="" alt="">
-        </div>
-        <div class="profile">
-            <p class="name_profile">
-                Davii Collections
+      <div  tabindex='0'>
+        <img src="./img/Group.svg" alt="Shopify logo" class="logo_desktop" />
+        <img src="./img/Shopify.com.svg" alt="Shopify logo" class="logo_mobile" />
+      </div>
+      <div  tabindex='0'class="searchContainer">
+        <img src="./img/Search.svg" alt="search icon" class="search_icon">
+        <input type="search" placeholder="Search" />
+      </div>
+      <div  tabindex='0'class="right_section"  >
+        <div  tabindex='0'class="bell" onclick="Notification()">
+          <img src="./img/bell.svg" alt="notification bell" />
+          <div class='notification' id="notification" tabindex="0">
+            <div class="alerts_container" tabindex="0">
+                <h2 tabindex="0">
+                              Alert
+                </h2>
+                <div class="alert_image" tabindex="0">
+                  <img src="./img/FilterMajor.svg" alt="filter icon"/>
+                  <img src="./img/CircleTickMajor.svg" alt="check icon"/>
+                </div>
+            </div>
+            <p class='message' tabindex='0'>
+              Alerts about your store and account will show here
             </p>
-           <div class='name_container'> <p class="name_short">DC</p></div>
+          </div>
         </div>
-    </div>
+        <div  tabindex='0'class="profile" onclick="OpenStore()">
+          <p tabindex="0"class="name_profile">Davii Collections</p>
+          <div  tabindex='0'class="name_container" >
+            <p tabindex="0"class="name_short">DC</p>
+          </div>
+          <div  tabindex='0'class='store' id="store">
+            <div  tabindex='0'class='store_name'>
+              <div  tabindex='0'class='store_profile'>
+              <p tabindex="0"class="name_short">DC</p>
+              <p tabindex="0"class='name_profile name_profile_store'>Davii Collections</p>
+            </div>
+              <div  tabindex='0'class='check'>
+                <img src='./img/check.svg' alt='tick icon showing who is the account holder' />
+              </div>
+            </div>
+           <div  tabindex='0'class="all_store_container"> 
+            <img src="./img/Store.svg" alt="store icon">
+            <p tabindex="0"class="all_stores">All stores</p>
+          </div>
+            <div  tabindex='0'class='store_container_two'><p tabindex="0">Help Center</p>
+            <p tabindex="0">Changelog</p>
+            <p tabindex="0">Community forums</p>
+            <p tabindex="0">Hire a Shopify Partner</p>
+            <p tabindex="0">Keyboard shortcuts</p>
+          </div>
+           <div  tabindex='0'class="account_container">
+                <p tabindex="0"class="account_name">
+                    <strong>David Micheal</strong> 
+                      <span class='email_span' tabindex="0">davidmicheal@gmail.com </span>
+                           </p>
+                           <p tabindex="0">Manage account</p>
+                           <p tabindex="0">Log out</p>
+           </div>
+          </div>
+        </div>
     </nav>
 
-    <section class="plan_section">
-       <div class="plan_container"> 
-        <p class="select_plan">
+    <main id='main_page'>
+      <section class="plan_section" id="plan_section">
+        <div  tabindex='0'class="plan_container" id="plan_container">
+          <p tabindex="0"class="select_plan">
             Extend your trial for $1/month for 3 months on select plans.
-        </p>
-        <button>Select Plan</button>
-        <i class="fa fa-close"></i>
-    </div>
-    </section>
-
-    <section>
-        <div class="setup_guide_container">
-            <div class="setup_name_guide">
-                <div class="setup_section_one"><h2 class="text_setup">Setup guide</h2>
-                <p class="setup_paragraph">
-                    Use this personalized guide to get your store up and running.
-                </p>
-                <span class="progress_container">
-                    <p class="complete_counter">1/2 Completed</p>
-                    <progress class="progress_counter">
-                        
-                    </progress>   
-                </span>
-            </div>
-            <button class="arrows_up_down">
-                <i class="fa fa-arrowup"></i>
-            </button>
-            </div>
-
-           <div class="list_items_container"> 
-            <ul class="list_items">
-                <li>
-                    <input type="checkbox" name="step_one" id="step_one">
-                    <label for="step_one">Customize your online store</label>
-                    <span class="step_one_container">
-                       <p class="step_one_p"> 
-                        Choose a theme and add your logo, colors, and images to reflect your brand. <br><a>Learn more</a>
-                    </p>
-                    <button type="button" class="step_one_button">Customize Theme</button>
-                    </span>
-                    <div class="step_one_image">
-                        <img src="" alt="">
-                    </div>
-                </li>
-                <li>
-                      <input type="checkbox" name="step_two" id="step_two">
-                      <label for="step_two">Add your first product </label>
-                      <span class="step_two_container">
-                        <p class="step_two_p"> 
-                            Write a description, add photos, and set pricing for the products you plan to sell.<br><a>Learn more</a>
-                     </p>
-                     <button type="button" class="step_two_button">Add product</button>
-                     <button type="button" class="step_two_button2">Import product</button>
-                     </span>
-                     <div class="step_two_image">
-                         <img src="" alt="">
-                     </div>
-                </li>
-                <li>
-                    <input type="checkbox" name="step_three" id="step_three">
-                    <label for="step_three">Add a custom domain</label>
-                    <span class="step_three_container">
-                        <p class="step_three_p"> 
-                            Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store.<br><a>Learn more</a>
-                     </p>
-                     <button type="button" class="step_three_button">Add domain</button>
-                     </span>
-                     <div class="step_three_image">
-                         <img src="" alt="">
-                     </div>
-                </li>
-                <li>
-                    <input type="checkbox" name="step_four" id="step_four">
-                    <label for="step_four">Name your store</label>
-                    <span class="step_four_container">
-                        <p class="step_four_p"> 
-                            Your temporary store name is currently Davii collections. The store name appears in your admin and your online store.<br><a>Learn more</a>
-                     </p>
-                     <button type="button" class="step_four_button">Name store</button>
-                     </span>
-                     <div class="step_four_image">
-                         <img src="" alt="">
-                     </div>
-                </li>
-                <li>
-                    <input type="checkbox" name="step_five" id="step_five">
-                    <label for="step_five">Set up a payment provider</label>
-                    <span class="step_five_container">
-                        <p class="step_five_p"> 
-                            Choose a payment provider to start accepting payments. You’ll need to create an account with the payment provider and set it up with your Shopify store.<br><a>Learn more</a>
-                     </p>
-                     <button type="button" class="step_five_button">Set up payment</button>
-                     </span>
-                     <div class="step_five_image">
-                         <img src="" alt="">
-                     </div>
-                </li>
-                
-            </ul></div>
+          </p>
+          <div tabindex='0' style="display: flex; gap:14px;">
+            <button type="button" id="select-plan">Select Plan</button>
+          <button type='button' id="dismiss_button" class="dismiss_button" onclick="Dismiss()">
+            <img src='./img/close.svg' alt="plan container dismiss button" />
+          </button>
         </div>
-    </section>
-</body>
+        </div>
+      </section>
+
+      <section>
+
+        <div  tabindex='0'class="setup_guide_container">
+          <div  tabindex='0'class="setup_name_guide" id="to-open-guides" aria-expanded="false" aria-controls="open-guides">
+            <div  tabindex='0'class="setup_section_one">
+              <h2 class="text_setup">Setup guide</h2>
+              <p tabindex="0"class="setup_paragraph">
+                Use this personalized guide to get your store up and running.
+              </p>
+              <span class="progress_container">
+                <p tabindex="0"class="complete_counter" id='complete_counter' aria-live="polite">0/5 completed</p>
+                <div  tabindex='0'class='counter_container'>
+                  <span class="progress_counter" id="progress"></span>
+                </div>
+              </span>
+            </div>
+            <button id="to-open-guides" aria-expanded="false" aria-controls="open-guides">
+              <div  tabindex='0'id="arrow" class="arrow"><img src="./img/Default.svg" alt="arrow to open or close setup guide"></div>
+            </button>
+          </div>
+
+          <div  tabindex='0'class="list_items_container" id="open-guides" aria-hidden="true">
+            <ul class="list_items">
+              <li id="step-one-container">
+                <div  tabindex='0'class="list_holder">
+                  <input type="checkbox" name="step_one" id="step-one" class='checkbox' />
+                  <div  tabindex='0'style="width: 100%;">
+                    <label for="step_one" aria-expanded="false" aria-controls="step-one-content"
+                      id="open-step-one-content">Customize your online store</label>
+                    <span class="step_one_container" id='step-one-content' aria-hidden="true">
+                      <div tabindex="0"> 
+                        <p tabindex="0"class="step_one_p">
+                          Choose a theme and add your logo, colors, and images to
+                          reflect your brand. <br /><a>Learn more</a>
+                        </p>
+                        <button type="button" id="customize-theme">
+                          Customize Theme
+                        </button>
+                      </div>
+                      <div  tabindex='0'class="step_one_image">
+                        <img src="./img/Customizestore.png" alt="Customize your online store" />
+                      </div>
+                  </div>
+                  </span>
+                </div>
+              </li>
+              <li id="step-two-container">
+                <div  tabindex='0'class="list_holder">
+                  <input type="checkbox" name="step_two" id="step-two" class='checkbox' />
+                  <div  tabindex='0'style="width: 100%;">
+                    <label for="step_two" aria-expanded="false" aria-controls="step-two-content"
+                      id="open-step-two-content">Add your first product </label>
+                    <span class="step_two_container" id="step-two-content" aria-hidden="true">
+                      <div tabindex="0">
+                        <p tabindex="0"class="step_two_p">
+                          Write a description, add photos, and set pricing for the
+                          products you plan to sell.<br /><a>Learn more</a>
+                        </p>
+
+                        <div  tabindex='0'class="product_buttons">
+                          <button type="button" id="add-product">
+                            Add product
+                          </button>
+                          <button type="button" class="step_two_button2" id="import-product">
+                            Import product
+                          </button>
+                        </div>
+                      </div>
+                      <div  tabindex='0'class="step_two_image">
+                        <img src="./img/product.png" alt="Add products  or import products" />
+                      </div>
+                  </div>
+                  </span>
+                </div>
+              </li>
+              <li id="step-three-container">
+                <div  tabindex='0'class="list_holder">
+                  <input type="checkbox" name="step_three" id="step-three" class='checkbox' />
+                  <div  tabindex='0'style="width: 100%;">
+                    <label for="step_three" aria-expanded="false" aria-controls="step-three-content"
+                      id="open-step-three-content">Add a custom domain</label>
+                    <span class="step_three_container" id="step-three-content" aria-hidden="true">
+                      <div tabindex="0">
+                        <p tabindex="0"class="step_three_p">
+                          Your current domain is 222219.myshopify.com but you can
+                          add a custom domain to help customers find your online
+                          store.<br /><a>Learn more</a>
+                        </p>
+                        <button type="button" id="add-domain">
+                          Add domain
+                        </button>
+                      </div>
+                      <div  tabindex='0'class="step_three_image">
+                        <img src="./img/domain.png" alt="add your custome domain" />
+                      </div>
+                  </div>
+                  </span>
+                </div>
+              </li>
+              <li id="step-four-container">
+                <div  tabindex='0'class="list_holder">
+                  <input type="checkbox" name="step_four" id="step-four" class='checkbox' />
+                  <div  tabindex='0'style="width: 100%;">
+                    <label for="step_four" aria-expanded="false" aria-controls="step-four-content"
+                      id="open-step-four-content">Name your store</label>
+                    <span class="step_four_container" id="step-four-content" aria-hidden="true">
+                      <div tabindex="0"> 
+                        <p tabindex="0"class="step_four_p">
+                          Your temporary store name is currently Davii collections.
+                          The store name appears in your admin and your online
+                          store.<br /><a>Learn more</a>
+                        </p>
+                        <button type="button" id="name-store">
+                          Name store
+                        </button>
+                      </div>
+                      <div  tabindex='0'class="step_four_image">
+                        <img src="./img/Namestore.png" alt="Name your store" />
+                      </div>
+                  </div>
+                  </span>
+                </div>
+              </li>
+              <li id="step-five-container">
+                <div  tabindex='0'class="list_holder" aria-expanded="false" aria-controls="step-five-content">
+                  <input type="checkbox" name="step_five" id="step-five" class='checkbox' />
+                  <div  tabindex='0'style="width: 100%;">
+                    <label for="step_five" aria-expanded="false" aria-controls="step-five-content"
+                      id="open-step-five-content">Set up a payment provider</label>
+                    <span tabindex="0" class="step_five_container" id="step-five-content" aria-hidden="true">
+                      <div tabindex="0"> 
+                        <p tabindex="0"class="step_five_p">
+                          Choose a payment provider to start accepting payments.
+                          You’ll need to create an account with the payment provider
+                          and set it up with your Shopify store.<br /><a>Learn more</a>
+                        </p>
+                        <button type="button" id="set-up-payment">
+                          Set up payment
+                        </button>
+                      </div>
+                      <div  tabindex='0'class="step_five_image">
+                        <img src="./img/payment.png" alt="set up your payment" />
+                      </div>
+                  </div>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="App.js"></script>
+  </body>
+
 </html>
